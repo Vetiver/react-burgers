@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {CurrencyIcon} from "@ya.praktikum/react-developer-burger-ui-components";
-import IngredientStyle from '../Ingredient/Ingredient.module.css';
+import Style from '../Ingredient/Ingredient.module.css';
 
 class Ingredient extends Component {
     constructor(props) {
@@ -8,9 +8,9 @@ class Ingredient extends Component {
     }
     render() {
         return (
-            <div className={`${IngredientStyle.ingredientContainer}`}>
+            <div className={`${Style.ingredientContainer}`}>
               <img src={this.props.arr.image} alt={this.props.arr.name} />
-              <div className={`${IngredientStyle.classContainer}`}>
+              <div className={`${Style.classContainer}`}>
                 <p className='text text_type_main-medium'>{this.props.arr.price}</p>
                 <CurrencyIcon type="primary" />
               </div>  

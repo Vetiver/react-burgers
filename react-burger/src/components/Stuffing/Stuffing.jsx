@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {DragIcon, ConstructorElement} from '@ya.praktikum/react-developer-burger-ui-components';
-import StuffingStyle from '../Stuffing/Stuffing.module.css';
+import Style from '../Stuffing/Stuffing.module.css';
 
 
 
@@ -10,7 +10,7 @@ class Stuffing extends Component {
     }
     render() {
         return (
-            <div className={`${StuffingStyle.stuffingBar}`}>
+            <div className={`${Style.stuffingBar}`}>
                 <DragIcon type="primary" />
                  <ConstructorElement
                   text={this.props.el.name}
